@@ -1,18 +1,18 @@
 {
   "title": {
-    "message": "女性之音",
+    "message": "LadysVoa",
     "description": "The title in the navbar"
   },
   "logo.alt": {
-    "message": "女性之音Logo",
+    "message": "LadysVoaのロゴ",
     "description": "The alt text of navbar logo"
   },
   "item.label.News": {
-    "message": "新闻",
+    "message": "ニュース",
     "description": "Navbar item with label News"
   },
   "item.label.Q&A": {
-    "message": "问答",
+    "message": "Q&A",
     "description": "Navbar item with label Q&A"
   },
   "item.label.Health": {
@@ -20,27 +20,27 @@
     "description": "Navbar item with label Health"
   },
   "item.label.Parenting": {
-    "message": "育儿",
+    "message": "育児",
     "description": "Navbar item with label Parenting"
   },
   "item.label.Celebrities": {
-    "message": "名人",
+    "message": "セレブ",
     "description": "Navbar item with label Celebrities"
   },
   "item.label.Knowledge Sharing": {
-    "message": "知识分享",
+    "message": "知識共有",
     "description": "Navbar item with label Knowledge Sharing"
   },
   "item.label.Library": {
-    "message": "图书馆",
+    "message": "図書館",
     "description": "Navbar item with label Library"
   },
   "item.label.Music": {
-    "message": "音乐",
+    "message": "音楽",
     "description": "Navbar item with label Music"
   },
   "item.label.Video": {
-    "message": "视频",
+    "message": "動画",
     "description": "Navbar item with label Video"
   }
 }

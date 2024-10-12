@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "Parenting",
+    "description": "The title for the blog used in SEO"
+  },
+  "description": {
+    "message": "Fostering children's independence, confidence, and spirit of exploration. Here, you'll find the most comprehensive, scientific, and authoritative parenting guide to help you raise an exceptional child.",
+    "description": "The description for the blog used in SEO"
+  },
+  "sidebar.title": {
+    "message": "Recent posts",
+    "description": "The label for the left sidebar"
+  }
+}

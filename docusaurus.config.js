@@ -31,7 +31,7 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: [ 'en','zh-Hans', 'zh-Hant','es','fr','ru','ar','pt-br','pt-pt'],
+    locales: [ 'en','zh-Hans', 'zh-Hant','es','fr','ru','pt-br','ko','ja'],
     localeConfigs: {     
       // 如果不需要重写默认值，可以忽略 locale (例如 fr)
       en: {
@@ -53,16 +53,15 @@ const config = {
       },
       'ru': {
         htmlLang: 'ru',
-      },
-      'ar': {
-        htmlLang: 'ar',
-        direction: 'rtl',
-      },
+      },      
       'pt-br': {
         htmlLang: 'pt-BR',
       },
-      'pt-pt': {
-        htmlLang: 'pt-PT',
+      'ko': {
+        htmlLang: 'ko-KR',
+      },
+      'ja': {
+        htmlLang: 'ja',
       },
     },
   },
@@ -202,7 +201,6 @@ const config = {
           src: 'img/logo.png',
         },
         items: [
-          {to: '/', label: 'Home', position: 'left'},
           {to: '/news', label: 'News', position: 'left'},
           {to: '/ask', label: 'Q&A', position: 'left'},
           {to: '/health', label: 'Health', position: 'left'},

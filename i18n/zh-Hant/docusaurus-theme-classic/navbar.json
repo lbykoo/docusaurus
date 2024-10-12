@@ -8,11 +8,11 @@
     "description": "The alt text of navbar logo"
   },
   "item.label.News": {
-    "message": "新闻",
+    "message": "新聞",
     "description": "Navbar item with label News"
   },
   "item.label.Q&A": {
-    "message": "问答",
+    "message": "問答",
     "description": "Navbar item with label Q&A"
   },
   "item.label.Health": {
@@ -20,27 +20,27 @@
     "description": "Navbar item with label Health"
   },
   "item.label.Parenting": {
-    "message": "育儿",
+    "message": "育兒",
     "description": "Navbar item with label Parenting"
   },
   "item.label.Celebrities": {
-    "message": "名人",
+    "message": "名流",
     "description": "Navbar item with label Celebrities"
   },
   "item.label.Knowledge Sharing": {
-    "message": "知识分享",
+    "message": "知識分享",
     "description": "Navbar item with label Knowledge Sharing"
   },
   "item.label.Library": {
-    "message": "图书馆",
+    "message": "圖書館",
     "description": "Navbar item with label Library"
   },
   "item.label.Music": {
-    "message": "音乐",
+    "message": "音樂",
     "description": "Navbar item with label Music"
   },
   "item.label.Video": {
-    "message": "视频",
+    "message": "影片",
     "description": "Navbar item with label Video"
   }
 }

@@ -1,46 +1,46 @@
 {
   "title": {
-    "message": "女性之音",
+    "message": "LadysVoa",
     "description": "The title in the navbar"
   },
   "logo.alt": {
-    "message": "女性之音Logo",
+    "message": "Logo do LadysVoa",
     "description": "The alt text of navbar logo"
   },
   "item.label.News": {
-    "message": "新闻",
+    "message": "Notícias",
     "description": "Navbar item with label News"
   },
   "item.label.Q&A": {
-    "message": "问答",
+    "message": "Perguntas e Respostas",
     "description": "Navbar item with label Q&A"
   },
   "item.label.Health": {
-    "message": "健康",
+    "message": "Saúde",
     "description": "Navbar item with label Health"
   },
   "item.label.Parenting": {
-    "message": "育儿",
+    "message": "Parentalidade",
     "description": "Navbar item with label Parenting"
   },
   "item.label.Celebrities": {
-    "message": "名人",
+    "message": "Celebridades",
     "description": "Navbar item with label Celebrities"
   },
   "item.label.Knowledge Sharing": {
-    "message": "知识分享",
+    "message": "Compartilhamento de Conhecimento",
     "description": "Navbar item with label Knowledge Sharing"
   },
   "item.label.Library": {
-    "message": "图书馆",
+    "message": "Biblioteca",
     "description": "Navbar item with label Library"
   },
   "item.label.Music": {
-    "message": "音乐",
+    "message": "Música",
     "description": "Navbar item with label Music"
   },
   "item.label.Video": {
-    "message": "视频",
+    "message": "Vídeo",
     "description": "Navbar item with label Video"
   }
 }
