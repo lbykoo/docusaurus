@@ -6,25 +6,132 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #e83080;
+  --ifm-color-primary-dark: #dd2b78;
+  --ifm-color-primary-darker: #ce266f;
+  --ifm-color-primary-darkest: #b92063;
+  --ifm-color-primary-light: #f63d8d;
+  --ifm-color-primary-lighter: #f74d97;
+  --ifm-color-primary-lightest: #ff61a5;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #ff61a5;
+  --ifm-color-primary-dark: #f35c9d;
+  --ifm-color-primary-darker: #d9508b;
+  --ifm-color-primary-darkest: #ca4981;
+  --ifm-color-primary-light: #ff6ead;
+  --ifm-color-primary-lighter: #fe79b3;
+  --ifm-color-primary-lightest: #fe86ba;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+a:hover,div:hover {
+  transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  -webkit-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  transition: background-color 0.6s;
+}
+@font-face {
+  font-family: 'Y11';
+  src: url('Muli-1GDlj.ttf');
+  /* IE9 Compat Modes */
+  src: url('Muli-1GDlj.ttf') format('embedded-opentype'),
+      /* IE6-IE8 */
+      url('Muli-1GDlj.ttf') format('woff'),
+      /* Modern Browsers */
+      url('Muli-1GDlj.ttf') format('truetype'),
+      /* Safari, Android, iOS */
+      url('Muli-1GDlj.ttf') format('svg');
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Y12';
+  src: url('BroadsheetLdo-vmGL.ttf');
+  /* IE9 Compat Modes */
+  src: url('BroadsheetLdo-vmGL.ttf') format('embedded-opentype'),
+      /* IE6-IE8 */
+      url('BroadsheetLdo-vmGL.ttf') format('woff'),
+      /* Modern Browsers */
+      url('BroadsheetLdo-vmGL.ttf') format('truetype'),
+      /* Safari, Android, iOS */
+      url('BroadsheetLdo-vmGL.ttf') format('svg');
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Y13';
+  src: url('Qumpellkano12-A6D2.otf');
+  /* IE9 Compat Modes */
+  src: url('Qumpellkano12-A6D2.otf') format('embedded-opentype'),
+      /* IE6-IE8 */
+      url('Qumpellkano12-A6D2.otf') format('woff'),
+      /* Modern Browsers */
+      url('Qumpellkano12-A6D2.otf') format('truetype'),
+      /* Safari, Android, iOS */
+      url('Qumpellkano12-A6D2.otf') format('svg');
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400;
+}
+.fa-brands--facebook-f {
+  display: inline-block;
+  width: 13.75px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3Cpath fill='white' d='m279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z'/%3E%3C/svg%3E");
+}
+
+.bi--twitter-x {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='white' d='M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07l-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z'/%3E%3C/svg%3E");
+}
+
+.fontisto--youtube-play {
+  display: inline-block;
+  width: 24.09px;
+  height: 17px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 24'%3E%3Cpath fill='white' d='m13.544 16.419l9.216-4.762l-9.216-4.818zM17.068 0q3.2 0 6.181.086t4.371.181l1.39.08q.019 0 .32.029c.167.013.317.033.465.061l-.026-.004q.134.029.448.086c.205.035.388.088.561.158L30.76.671q.229.095.534.248c.225.114.419.238.599.377l-.008-.006c.203.158.383.323.549.502l.003.003q.154.161.288.342l.007.01c.202.318.388.686.537 1.071l.015.044c.24.559.417 1.207.501 1.885l.004.035q.152 1.219.24 2.6t.105 2.16v3.352l.001.263c0 1.853-.125 3.678-.367 5.465l.023-.208a7.6 7.6 0 0 1-.498 1.946l.018-.051a4.8 4.8 0 0 1-.62 1.186l.01-.015l-.266.32a4.5 4.5 0 0 1-.542.497l-.01.008a3 3 0 0 1-.571.353l-.019.008q-.305.143-.534.24a2.6 2.6 0 0 1-.527.15l-.016.002q-.314.057-.457.086t-.438.057t-.314.029q-4.775.372-11.937.372q-3.943-.038-6.848-.124t-3.819-.143l-.934-.08l-.686-.08a9 9 0 0 1-1.102-.204l.062.013a6 6 0 0 1-1.003-.415l.032.015a3.8 3.8 0 0 1-1.075-.78l-.001-.001a4 4 0 0 1-.288-.342l-.007-.01a6 6 0 0 1-.537-1.071l-.015-.044a7 7 0 0 1-.501-1.885l-.004-.035q-.152-1.219-.24-2.6t-.105-2.16v-3.352l-.001-.263c0-1.853.125-3.678.367-5.465l-.023.208A7.6 7.6 0 0 1 .84 3.238l-.018.051c.162-.447.368-.834.62-1.186l-.01.015l.266-.32q.253-.272.542-.497l.01-.008c.172-.134.365-.257.57-.362l.021-.01q.305-.152.534-.248a2.6 2.6 0 0 1 .527-.15l.016-.002q.314-.057.448-.086c.121-.024.271-.044.424-.056l.015-.001q.305-.029.32-.029q4.783-.35 11.946-.35z'/%3E%3C/svg%3E");
+}
+
+.mingcute--tiktok-fill {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z'/%3E%3Cpath fill='white' d='M14 2a2 2 0 0 1 2 2a3.004 3.004 0 0 0 2.398 2.94a2 2 0 0 1-.796 3.92A7 7 0 0 1 16 10.325V16a6 6 0 1 1-7.499-5.81a2 2 0 0 1 .998 3.873A2.002 2.002 0 0 0 10 18a2 2 0 0 0 2-2V4a2 2 0 0 1 2-2'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.bxl--instagram {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M11.999 7.377a4.623 4.623 0 1 0 0 9.248a4.623 4.623 0 0 0 0-9.248m0 7.627a3.004 3.004 0 1 1 0-6.008a3.004 3.004 0 0 1 0 6.008'/%3E%3Ccircle cx='16.806' cy='7.207' r='1.078' fill='white'/%3E%3Cpath fill='white' d='M20.533 6.111A4.6 4.6 0 0 0 17.9 3.479a6.6 6.6 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.6 6.6 0 0 0-2.184.42a4.6 4.6 0 0 0-2.633 2.632a6.6 6.6 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71s0 2.753.056 3.71c.015.748.156 1.486.419 2.187a4.6 4.6 0 0 0 2.634 2.632a6.6 6.6 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.6 6.6 0 0 0 2.186-.419a4.6 4.6 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186c.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.6 6.6 0 0 0-.421-2.217m-1.218 9.532a5 5 0 0 1-.311 1.688a3 3 0 0 1-1.712 1.711a5 5 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055c-2.438 0-2.687 0-3.655-.055a5 5 0 0 1-1.669-.311a3 3 0 0 1-1.719-1.711a5.1 5.1 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654s0-2.686.053-3.655a5 5 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5 5 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a5 5 0 0 1 1.67.311a3 3 0 0 1 1.712 1.712a5.1 5.1 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655s0 2.698-.043 3.654z'/%3E%3C/svg%3E");
+}
+
+.navbar__brand .navbar__title,header .hero__title{
+  font-family: "Y13";
+}
+
+body{
+  font-family: "Y11";
+}
+.navbar--fixed-top{
+  box-shadow: 2px 1px 10px 0px rgb(51 51 51 / 20%);
 }

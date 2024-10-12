@@ -1,49 +1,68 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import Link from '@docusaurus/Link';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
+    title: `The Art of Self-Care: Prioritizing Your Well-being in a Busy Lifestyle`,
+    des: `In today's fasalancing work, hobbies, gaming, family, friends, social life, and nature...`,
+    img: `https://demo.tagdiv.com/newspaper_world_matters_pro/wp-content/uploads/2023/06/40-1-696x580.jpg`,
+    url: `https://demo.tagdiv.com/`
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
+    title: `The Art of Self-Care: Prioritizing Your Well-being in a Busy Lifestyle`,
+    des: `In today's fast-paced society, finding a harmonious work-life balance has become an essential pursuit. Balancing work, hobbies, gaming, family, friends, social life, and nature...`,
+    img: `https://demo.tagdiv.com/newspaper_world_matters_pro/wp-content/uploads/2023/06/40-1-696x580.jpg`,
+    url: `https://demo.tagdiv.com/`
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
+    title: `The Art of Self-Care: Prioritizing Your Well-being in a Busy Lifestyle`,
+    des: `In today's fast-paced society, finding a harmonious work-life balance has become an essential pursuit. Balancing work, hobbies, gaming, family, friends, social life, and nature...`,
+    img: `https://demo.tagdiv.com/newspaper_world_matters_pro/wp-content/uploads/2023/06/40-1-696x580.jpg`,
+    url: `https://demo.tagdiv.com/`
   },
+  {
+    title: `The Art of Self-Care: Prioritizing Your Well-being in a Busy Lifestyle`,
+    des: `In today's fast-paced society, finding a harmonious work-life balance has become an essential pursu,it. Balancing work, hobbies, gaming, family, friends, social life, and nature...`,
+    img: `https://demo.tagdiv.com/newspaper_world_matters_pro/wp-content/uploads/2023/06/40-1-696x580.jpg`,
+    url: `https://demo.tagdiv.com/`
+  },
+  {
+    title: `The Art of Self-Care: Prioritizing Your Well-being in a Busy Lifestyle`,
+    des: `In today's fast-paced society, finding a harmonious work-life balance has become an essential pursuit. Balancing work, hobbies, gaming, family, friends, social life, and nature...`,
+    img: `https://demo.tagdiv.com/newspaper_world_matters_pro/wp-content/uploads/2023/06/40-1-696x580.jpg`,
+    url: `https://demo.tagdiv.com/`
+  },
+  {
+    title: `The Art of Self-Care: Prioritizing Your Well-being in a Busy Lifestyle`,
+    des: `In today's fast-paced society, finding a harmonious work-life balance has become an essential pursuit. Balancing work, hobbies, gaming, family, friends, social life, and nature...`,
+    img: `https://demo.tagdiv.com/newspaper_world_matters_pro/wp-content/uploads/2023/06/40-1-696x580.jpg`,
+    url: `https://demo.tagdiv.com/`
+  },
+  {
+    title: `The Art of Self-Care: Prioritizing Your Well-being in a Busy Lifestyle`,
+    des: `In today's fast-paced society, finding a harmonious work-life balance has become an essential pursuit. Balancing work, hobbies, gaming, family, friends, social life, and nature...`,
+    img: `https://demo.tagdiv.com/newspaper_world_matters_pro/wp-content/uploads/2023/06/40-1-696x580.jpg`,
+    url: `https://demo.tagdiv.com/`
+  },
+  {
+    title: `The Art of Self-Care: Prioritizing Your Well-being in a Busy Lifestyle`,
+    des: `In today's fast-paced society, finding a harmonious work-life balance has become an essential pursuit. Balancing work, hobbies, gaming, family, friends, social life, and nature...`,
+    img: `https://demo.tagdiv.com/newspaper_world_matters_pro/wp-content/uploads/2023/06/40-1-696x580.jpg`,
+    url: `https://demo.tagdiv.com/`
+  },  
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ title, des, img, url }) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+    <div className={styles.item}>
+      <div className={styles.img}>
+      <Link to={url}><img src={img} alt={title} /></Link>
       </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+      <div className={styles.text}>
+        <Heading as="h3"><Link to={url}>{title}</Link></Heading>
+        <p>{des}</p>
       </div>
     </div>
   );
@@ -52,12 +71,10 @@ function Feature({Svg, title, description}) {
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
+      <div className={clsx("container",styles.items)}>
+        {FeatureList.map((props, idx) => (
+          <Feature key={idx} {...props} />
+        ))}
       </div>
     </section>
   );

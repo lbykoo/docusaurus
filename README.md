@@ -46,7 +46,8 @@ $ GIT_USER=lbykoo yarn deploy
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
 
 
-docusaurus write-translations --locale zh-Hans
+yarn write-translations --locale zh-Hans
 到对应的语言目录下载。
-
-多语言功能需要在build之后才能测试。
+本地测试代码：
+yarn run start --locale zh-Hans  
+后面跟不同语言

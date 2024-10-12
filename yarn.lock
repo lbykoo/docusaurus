@@ -1355,7 +1355,7 @@
     react-helmet-async "*"
     react-loadable "npm:@docusaurus/react-loadable@6.0.0"
 
-"@docusaurus/plugin-content-blog@3.5.2":
+"@docusaurus/plugin-content-blog@3.5.2", "@docusaurus/plugin-content-blog@^3.5.2":
   version "3.5.2"
   resolved "https://registry.npmmirror.com/@docusaurus/plugin-content-blog/-/plugin-content-blog-3.5.2.tgz#649c07c34da7603645f152bcebdf75285baed16b"
   integrity sha512-R7ghWnMvjSf+aeNDH0K4fjyQnt5L0KzUEnUhmf1e3jZrv3wogeytZNN6n7X8yHcMsuZHPOrctQhXWnmxu+IRRg==

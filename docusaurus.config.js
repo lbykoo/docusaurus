@@ -8,19 +8,19 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'LadysVoa',
+  tagline: 'Extend or customize your website layout by reusing React. Docusaurus can be extended while reusing the same header and footer.',
+  favicon: 'img/logo.png',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://lbykoo.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
+  organizationName: 'lbykoo', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -76,8 +76,7 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -87,8 +86,7 @@ const config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+           // editUrl:'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -100,26 +98,120 @@ const config = {
       }),
     ],
   ],
-
+  plugins: [
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'news',
+        routeBasePath: 'news', 
+        path: 'news', 
+        blogTitle: 'News', 
+        blogDescription: `Here, we bring you the latest global news highlights, in-depth reports, and exclusive insights! Whether it's fashion trends, technological innovations, workplace dynamics, or the rise of women's power, we'll guide you in interpreting those moments that are changing the world in real time.`, 
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'ask',
+        routeBasePath: 'ask', 
+        path: 'ask', 
+        blogTitle: 'Q&A', 
+        blogDescription: `Here, there are no 'stupid' questions, only great conversations! Whether you want to learn about career tips, life hacks, or insightful perspectives on women's growth, we're happy to provide the answers!`, 
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'health',
+        routeBasePath: 'health', 
+        path: 'health', 
+        blogTitle: 'Health', 
+        blogDescription: `Whether you're looking for fitness inspiration, nutrition guides, or practical tips for mental health, we've got plenty of content for you! From energizing workout plans to easy and delicious healthy recipes, everything here is designed to help you stay healthy, strong, and happy.`, 
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'parenting',
+        routeBasePath: 'parenting', 
+        path: 'parenting', 
+        blogTitle: 'Parenting', 
+        blogDescription: `Fostering children's independence, confidence, and spirit of exploration. Here, you'll find the most comprehensive, scientific, and authoritative parenting guide to help you raise an exceptional child.`, 
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'celebrities',
+        routeBasePath: 'celebrities', 
+        path: 'celebrities', 
+        blogTitle: 'Celebrities', 
+        blogDescription: `Fostering children's independence, confidence, and spirit of exploration. Here, you'll find the most comprehensive, scientific, and authoritative parenting guide to help you raise an exceptional child.`, 
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'info', 
+        path: 'info', 
+        routeBasePath: 'info',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'library', 
+        path: 'library', 
+        routeBasePath: 'library',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'sharing', 
+        path: 'sharing', 
+        routeBasePath: 'sharing',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'music', 
+        path: 'music', 
+        routeBasePath: 'music',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'video', 
+        path: 'video', 
+        routeBasePath: 'video',
+      },
+    ],
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'LadysVoa',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'LadysVoa Logo',
+          src: 'img/logo.png',
         },
         items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/', label: 'Home', position: 'left'},
+          {to: '/news', label: 'News', position: 'left'},
+          {to: '/ask', label: 'Q&A', position: 'left'},
+          {to: '/health', label: 'Health', position: 'left'},
+          {to: '/parenting', label: 'Parenting', position: 'left'},
+          {to: '/celebrities', label: 'Celebrities', position: 'left'},
+          {to: '/sharing', label: 'Knowledge Sharing', position: 'left'},
+          {to: '/library', label: 'Library', position: 'left'},                 
+          {to: '/music', label: 'Music', position: 'left'},                 
+          {to: '/video', label: 'Video', position: 'left'},
           {
             type: 'localeDropdown',
             position: 'right',
@@ -130,11 +222,48 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Information',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'About',
+                to: '/info/site-info/about',
+              },
+              {
+                label: 'Privacy Policy',
+                to: '/info/site-info/privacy-policy',
+              },
+              {
+                label: 'FAQ',
+                to: '/info/site-info/faq',
+              },
+              {
+                label: 'Contact Us',
+                to: '/info/site-info/contact',
+              },
+              {
+                label: 'Advertise with us',
+                to: '/info/site-info/ads',
+              },
+            ],
+          },
+          {
+            title: 'Submission Entrance',
+            items: [
+              {
+                label: 'Significance of Submissions',
+                to: '/info/submission/significance-of-submissions',
+              },
+              {
+                label: 'Submission Rules',
+                to: '/info/submission/submission-rules',
+              },
+              {
+                label: 'Submit prerequisites',
+                to: '/info/submission/submit-prerequisites',
+              },
+              {
+                label: 'How to Submit',
+                to: '/info/submission/how-to-submit',
               },
             ],
           },
@@ -169,7 +298,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright 2024 <a href="/">LadysVoa</a> All rights reserved.`,
       },
       prism: {
         theme: prismThemes.github,

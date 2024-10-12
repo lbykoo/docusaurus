@@ -2,22 +2,201 @@
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
-
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+.main {
+  background: #f8f8f8;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.heroBanner {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  background: #2c2c2c;
+  box-shadow: 2px 1px 13px 0px rgb(51 51 51 / 30%);
+}
+
+.topBanner {
+  display: flex;
+  align-items: flex-start;
+}
+
+.BannerText {
+  width: 50%;
+  padding-right: 2rem;
+  margin-top: 4rem;
+}
+
+.BannerText h1 {
+  font-size: 3rem;
+  font-family: "Y12";
+  letter-spacing: 0.2rem;
+}
+
+.BannerText p {
+  font-size: 1.3rem;
+  font-weight: 500 !important;
+}
+
+.BannerHot {
+  width: 50%;
+  background: #fff;
+  padding-bottom: 2rem;
+}
+
+.media,
+.media.img {
+  width: 100%;
+}
+
+.media img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.media a:hover img {
+  opacity: 0.8;
+}
+
+.media a,
+.mediaText a {
+  text-decoration: none;
+}
+
+.media a h2 {
+  color: #222;
+  font-size: 1.4rem;
+  font-family: "Y12";
+  letter-spacing: 0.1rem;
+}
+
+.mediaText a h3 {
+  font-size: 1rem;
+  font-family: "Y12";
+  letter-spacing: 0.1rem;
+  color: #222;
+  text-decoration: none;
+}
+
+.mediaText {
+  display: flex;
+  margin-top: 1rem;
+  margin: 1.5rem 0.8rem;
+}
+
+.mediaText i {
+  height: var(--ifm-h3-font-size);
+  line-height: var(--ifm-h3-font-size);
+  font-size: 8px;
+  margin-right: 10px;
+  color: #222;
 }
 
 .buttons {
+  margin-top: 0.6rem;
+}
+
+.buttons a {
+  display: inline-block;
+  height: auto;
+  padding: 15px 30px;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.button1 {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.button1:hover,
+.button2 {
+  background: var(--ifm-color-primary);
+  border: 1px solid var(--ifm-color-primary);
+}
+
+.button2:hover {
+  background: var(--ifm-color-primary-darker);
+  border: 1px solid var(--ifm-color-primary-darker);
+  color: #fff;
+}
+
+.share {
+  display: flex;
+  margin: 2rem 0;
+}
+
+.share a {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: auto 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #bfbaba;
+}
+
+.share a:nth-child(1):hover {
+  background: #3b5997;
+}
+
+.share a:nth-child(2):hover {
+  background: #00aced;
+}
+
+.share a:nth-child(3):hover {
+  background: linear-gradient(to bottom, #6329C5 0%, #E53643 35%, #EF622E 75%, #F8D773 95%);
+}
+
+.share a:nth-child(4):hover {
+  background: #ff004f;
+}
+
+.share a:nth-child(5):hover {
+  background: #f00;
+}
+
+.media a h2,
+.mediaText a h3 {
+  position: relative;
+  display: inline;
+  background: -webkit-gradient(linear, left top, right top, from(currentColor), to(currentColor));
+  background: -webkit-linear-gradient(left, currentColor 0%, currentColor 100%);
+  background: -o-linear-gradient(left, currentColor 0%, currentColor 100%);
+  background: linear-gradient(to right, currentColor 0%, currentColor 100%);
+  background-size: 0px 2px;
+  background-position: 0px 95%;
+  -webkit-transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+  -o-transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+  transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+  padding: 0.1% 0px;
+  background-repeat: no-repeat;
+}
+
+.media:hover a h2,
+.mediaText:hover a h3 {
+  color: var(--ifm-color-primary);
+  background-size: 100% 2px;
+}
+
+@media screen and (max-width: 996px) {
+  .topBanner {
+    flex-direction: column;
+  }
+
+  .BannerText {
+    width: 100%;
+    padding: 0;
+    margin-top: 2rem;
+  }
+
+  .BannerText h1 {
+    font-size: 2rem;
+  }
+
+  .BannerHot {
+    width: 100%;
+    margin-top: 2rem;
+  }
 }
