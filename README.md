@@ -35,7 +35,7 @@ Using SSH:
 ```
 $ USE_SSH=true yarn deploy
 ```
-windows写法 
+windows写法   
 $env:GIT_USER = "lbykoo"; yarn deploy
 
 Not using SSH:

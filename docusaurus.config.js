@@ -91,6 +91,13 @@ const config = {
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
         },
+        gtag: {
+          trackingID: 'G-FD3SE5PEL4',
+          anonymizeIP: true,
+        },
+        googleTagManager: {
+          containerId: 'GTM-597RJSNZ',
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -211,6 +218,10 @@ const config = {
           {to: '/music', label: 'Music', position: 'left'},                 
           {to: '/video', label: 'Video', position: 'left'},
           {
+            type: 'search',
+            position: 'right',
+          },
+          {
             type: 'localeDropdown',
             position: 'right',
           },
@@ -301,6 +312,12 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+      },
+      algolia:{
+        contextualSearch: true,
+        apiKey: 'bd81fe91b8f9f8fc192a27d8da80ce9a',
+        indexName: 'ladys', 
+        appId: '78CUPFXA1P',
       },
     }),
 };
