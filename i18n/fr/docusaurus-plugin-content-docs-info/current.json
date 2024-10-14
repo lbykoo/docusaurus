@@ -1,22 +1,22 @@
 {
   "version.label": {
-    "message": "Next",
+    "message": "Suivant",
     "description": "The label for version current"
   },
   "sidebar.defaultSidebar.category.Website Information": {
-    "message": "Website Information",
+    "message": "Informations sur le site web",
     "description": "The label for category Website Information in sidebar defaultSidebar"
   },
   "sidebar.defaultSidebar.category.Website Information.link.generated-index.description": {
-    "message": "5 minutes to learn the most important LadyVoa information.",
+    "message": "5 minutes pour apprendre les informations les plus importantes de LadyVoa.",
     "description": "The generated-index page description for category Website Information in sidebar defaultSidebar"
   },
   "sidebar.defaultSidebar.category.Submission Entrance": {
-    "message": "Submission Entrance",
+    "message": "Entrée de la soumission",
     "description": "The label for category Submission Entrance in sidebar defaultSidebar"
   },
   "sidebar.defaultSidebar.category.Submission Entrance.link.generated-index.description": {
-    "message": "Publish your original content on ladysvoa",
+    "message": "Publiez votre contenu original sur ladysvoa.",
     "description": "The generated-index page description for category Submission Entrance in sidebar defaultSidebar"
   }
 }

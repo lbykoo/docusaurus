@@ -23,6 +23,7 @@
   width: 50%;
   padding-right: 2rem;
   margin-top: 4rem;
+  margin-bottom: 0.6rem;
 }
 
 .BannerText h1 {
@@ -67,7 +68,6 @@
   font-family: "Y12";
   letter-spacing: 0.1rem;
 }
-
 .mediaText a h3 {
   font-size: 1rem;
   font-family: "Y12";

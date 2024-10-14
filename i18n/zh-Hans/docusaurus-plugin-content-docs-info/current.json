@@ -1,22 +1,22 @@
 {
   "version.label": {
-    "message": "Next",
+    "message": "下一页",
     "description": "The label for version current"
   },
   "sidebar.defaultSidebar.category.Website Information": {
-    "message": "Website Information",
+    "message": "网站信息",
     "description": "The label for category Website Information in sidebar defaultSidebar"
   },
   "sidebar.defaultSidebar.category.Website Information.link.generated-index.description": {
-    "message": "5 minutes to learn the most important LadyVoa information.",
+    "message": "5 分钟了解 LadyVoa 最重要的信息。",
     "description": "The generated-index page description for category Website Information in sidebar defaultSidebar"
   },
   "sidebar.defaultSidebar.category.Submission Entrance": {
-    "message": "Submission Entrance",
+    "message": "投稿入口",
     "description": "The label for category Submission Entrance in sidebar defaultSidebar"
   },
   "sidebar.defaultSidebar.category.Submission Entrance.link.generated-index.description": {
-    "message": "Publish your original content on ladysvoa",
+    "message": "在 ladysvoa 上发布您的原创内容。",
     "description": "The generated-index page description for category Submission Entrance in sidebar defaultSidebar"
   }
 }

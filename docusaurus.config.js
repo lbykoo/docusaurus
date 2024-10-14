@@ -36,11 +36,9 @@ const config = {
       // 如果不需要重写默认值，可以忽略 locale (例如 fr)
       en: {
         htmlLang: 'en-GB',
-        path: 'en',
       },
       'zh-Hans': {
         htmlLang: 'zh-CN',
-        path: 'zh-Hans',
       },
       'zh-Hant': {
         htmlLang: 'zh-TW',
@@ -105,6 +103,16 @@ const config = {
     ],
   ],
   plugins: [
+    [
+      '@docusaurus/plugin-ideal-image',
+      {
+        quality: 70,
+        max: 1030, // max resized image's size.
+        min: 640, // min resized image's size. if original is lower, use that size.
+        steps: 2, // the max number of images generated between min and max (inclusive)
+        disableInDev: false,
+      },
+    ],
     [
       '@docusaurus/plugin-content-blog',
       {
@@ -279,31 +287,13 @@ const config = {
           {
             title: 'Community',
             items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
+              
             ],
           },
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
+              
             ],
           },
         ],

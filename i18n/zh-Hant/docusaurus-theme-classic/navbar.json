@@ -42,5 +42,9 @@
   "item.label.Video": {
     "message": "影片",
     "description": "Navbar item with label Video"
+  },
+  "item.label.Tutorial": {
+    "message": "Tutorial",
+    "description": "Navbar item with label Tutorial"
   }
 }

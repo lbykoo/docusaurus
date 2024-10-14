@@ -3,9 +3,10 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-
+import Translate from '@docusaurus/Translate';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
+import Image from '@theme/IdealImage';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -14,8 +15,16 @@ function HomepageHeader() {
       <div className="container">
         <div className={styles.topBanner}>
           <div className={styles.BannerText}>
-            <Heading as="h1">Discover the World: Engage, Stay Informed</Heading>
-            <p>Welcome to our dynamic news platform, where you can explore a diverse range of topics, from global news to lifestyle, fashion, art, and more. Join us on this exciting journey of discovery, engagement, and staying informed as we uncover the stories that shape our world.</p>
+            <Heading as="h1">
+              <Translate description="The homepage main h1">
+                Embrace life: immerse yourself in the world of style!
+              </Translate>
+            </Heading>
+            <p>
+              <Translate description="The homepage main p">
+                Welcome to our women's only platform, where you can explore global trends, lifestyle, fashion, art and more. Join us on our fashion journey and interact with us to discover the fascination of this colourful world. Whether you are looking for the latest fashion trends or exploring the little blessings in life, we will be your most intimate partner. Here, every woman can find her own style and shape a better life together.
+              </Translate>
+            </p>
             <div className={styles.share}>
               <a href=""><span className="fa-brands--facebook-f"></span></a>
               <a href=""><span className="bi--twitter-x"></span></a>
@@ -27,36 +36,52 @@ function HomepageHeader() {
               <Link
                 className={styles.button1}
                 to="/info/category/submission-entrance">
-                Submission Entrance
+                <Translate description="The homepage main btn1">
+                  Submission Entrance
+                </Translate>
               </Link>
             </div>
             <div className={styles.buttons}>
               <Link
                 className={styles.button2}
                 to="/info/category/website-information">
-                About Us - 5min ⏱️
+                <Translate description="The homepage main btn2">
+                  About Us - 5min
+                </Translate> ⏱️
               </Link>
             </div>
           </div>
           <div className={styles.BannerHot}>
             <div className={styles.media}>
               <Link to="/">
-                <img src="https://ichef.bbci.co.uk/news/1536/cpsprodpb/d99d/live/21523c00-76cf-11ef-b02d-c5f3b724a1ea.png.webp" alt="" />
-                <Heading as="h2">Hezbollah leader says exploding device attacks crossed 'all red lines'</Heading>
+                <Image img="https://ichef.bbci.co.uk/news/1536/cpsprodpb/d99d/live/21523c00-76cf-11ef-b02d-c5f3b724a1ea.png.webp" alt="" />
+                <Heading as="h2">
+                  <Translate description="The homepage main h2">
+                    Submission Entrancessdf
+                  </Translate>
+                </Heading>
               </Link>
             </div>
             <div className={styles.mediaText}>
               <i>●</i>
               <Link to="">
-              <Heading as="h3">'We don’t know if our phones are safe': Lebanon on edgeWhy hundreds of Samsung workers are protesting in India</Heading>
+                <Heading as="h3">
+                  <Translate description="The homepage main h3-1">
+                    Submission Entrancessdf3-1
+                  </Translate>
+                </Heading>
               </Link>
             </div>
             <div className={styles.mediaText}>
               <i>●</i>
               <Link to="">
-              <Heading as="h3">'We don’t know if our phones are safe': Lebanon on edgeWhy hundreds of Samsung workers are protesting in India</Heading>
+                <Heading as="h3">
+                  <Translate description="The homepage main h3-2">
+                    Submission Entrancessdf3-2
+                  </Translate>
+                </Heading>
               </Link>
-            </div>            
+            </div>
           </div>
         </div>
       </div>
