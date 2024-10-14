@@ -5,4 +5,4 @@ sidebar_position: 1
 # 关于
 s
 
-![Docs Version Dropdown](/images/a1.png)
+![Docs Version Dropdown](https://pic.ladysvoa.com/upload/avatar/a1.webp)
