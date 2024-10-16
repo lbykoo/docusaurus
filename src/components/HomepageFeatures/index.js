@@ -50,7 +50,7 @@ export default function HomepageFeatures() {
       <div className="container">
         <div className="row">
           <div className={styles.zuo}>
-            <h2>推荐</h2>
+            <h2>Recommend</h2>
             <div className={styles.item}>
               {TuiList.map((props, idx) => (
                 <Tui key={idx} {...props} />
@@ -58,7 +58,7 @@ export default function HomepageFeatures() {
             </div>
           </div>
           <div className={styles.you}>
-            <h2>关注热点</h2>
+            <h2>Focus on hot spots</h2>
             {FeatureList.map((props, idx) => (
               <Feature key={idx} {...props} />
             ))}
