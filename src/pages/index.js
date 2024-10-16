@@ -3,7 +3,6 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Translate from '@docusaurus/Translate';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 import Image from '@theme/IdealImage';
@@ -16,14 +15,10 @@ function HomepageHeader() {
         <div className={styles.topBanner}>
           <div className={styles.BannerText}>
             <Heading as="h1">
-              <Translate description="The homepage main h1">
-                Embrace life: immerse yourself in the world of style!
-              </Translate>
+              Embrace life: immerse yourself in the world of style!
             </Heading>
             <p>
-              <Translate description="The homepage main p">
-                Welcome to our women's only platform, where you can explore global trends, lifestyle, fashion, art and more. Join us on our fashion journey and interact with us to discover the fascination of this colourful world. Whether you are looking for the latest fashion trends or exploring the little blessings in life, we will be your most intimate partner. Here, every woman can find her own style and shape a better life together.
-              </Translate>
+              Welcome to our women's only platform, where you can explore global trends, lifestyle, fashion, art and more. Join us on our fashion journey and interact with us to discover the fascination of this colourful world. Whether you are looking for the latest fashion trends or exploring the little blessings in life, we will be your most intimate partner. Here, every woman can find her own style and shape a better life together.
             </p>
             <div className={styles.share}>
               <a href=""><span className="fa-brands--facebook-f"></span></a>
@@ -36,49 +31,47 @@ function HomepageHeader() {
               <Link
                 className={styles.button1}
                 to="/info/category/submission-entrance">
-                <Translate description="The homepage main btn1">
-                  Submission Entrance
-                </Translate>
+                Submission Entrance
               </Link>
             </div>
             <div className={styles.buttons}>
               <Link
                 className={styles.button2}
                 to="/info/category/website-information">
-                <Translate description="The homepage main btn2">
-                  About Us - 5min
-                </Translate> ⏱️
+                About Us - 5min
               </Link>
             </div>
           </div>
           <div className={styles.BannerHot}>
             <div className={styles.media}>
               <Link to="/">
-                <Image img="https://ichef.bbci.co.uk/news/1536/cpsprodpb/d99d/live/21523c00-76cf-11ef-b02d-c5f3b724a1ea.png.webp" alt="" />
+                <Image img="https://pic.ladysvoa.com/upload/2024916/BR1yTX8UAoJOA4rUQeXn3.jpeg" alt="Why Ovarian Cancer Is Late Stage Once Detected" />
                 <Heading as="h2">
-                  <Translate description="The homepage main h2">
-                    Submission Entrancessdf
-                  </Translate>
+                Why Ovarian Cancer Is Late Stage Once Detected
                 </Heading>
               </Link>
             </div>
             <div className={styles.mediaText}>
               <i>●</i>
-              <Link to="">
+              <Link to="/sharing/experience/2024-10-16-you-can-put-some-conditioner-in-the-water-when-youre-mopping">
                 <Heading as="h3">
-                  <Translate description="The homepage main h3-1">
-                    Submission Entrancessdf3-1
-                  </Translate>
+                You can put some conditioner in the water when you're mopping.
                 </Heading>
               </Link>
             </div>
             <div className={styles.mediaText}>
               <i>●</i>
-              <Link to="">
+              <Link to="/health/2024/10/16/fibroids-have-a-high-rate-of-recurrence-how-can-they-be-avoided">
                 <Heading as="h3">
-                  <Translate description="The homepage main h3-2">
-                    Submission Entrancessdf3-2
-                  </Translate>
+                Fibroids have a high rate of recurrence, how can they be avoided?
+                </Heading>
+              </Link>
+            </div>
+            <div className={styles.mediaText}>
+              <i>●</i>
+              <Link to="/ask/2024/10/16/can-women-with-uterine-fibroids-eat-apples">
+                <Heading as="h3">
+                Can Women with Uterine Fibroids Eat Apples?
                 </Heading>
               </Link>
             </div>

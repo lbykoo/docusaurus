@@ -31,37 +31,7 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: [ 'en','zh-Hans', 'zh-Hant','es','fr','ru','pt-br','ko','ja'],
-    localeConfigs: {     
-      // 如果不需要重写默认值，可以忽略 locale (例如 fr)
-      en: {
-        htmlLang: 'en-GB',
-      },
-      'zh-Hans': {
-        htmlLang: 'zh-CN',
-      },
-      'zh-Hant': {
-        htmlLang: 'zh-TW',
-      },
-      'es': {
-        htmlLang: 'es',
-      },
-      'fr': {
-        htmlLang: 'fr',
-      },
-      'ru': {
-        htmlLang: 'ru',
-      },      
-      'pt-br': {
-        htmlLang: 'pt-BR',
-      },
-      'ko': {
-        htmlLang: 'ko-KR',
-      },
-      'ja': {
-        htmlLang: 'ja',
-      },
-    },
+    locales: [ 'en'],   
   },
 
   presets: [
@@ -221,18 +191,14 @@ const config = {
           {to: '/health', label: 'Health', position: 'left'},
           {to: '/parenting', label: 'Parenting', position: 'left'},
           {to: '/celebrities', label: 'Celebrities', position: 'left'},
-          {to: '/sharing', label: 'Knowledge Sharing', position: 'left'},
+          {to: '/sharing/category/information', label: 'Knowledge Sharing', position: 'left'},
           {to: '/library', label: 'Library', position: 'left'},                 
           {to: '/music', label: 'Music', position: 'left'},                 
           {to: '/video', label: 'Video', position: 'left'},
           {
             type: 'search',
             position: 'right',
-          },
-          {
-            type: 'localeDropdown',
-            position: 'right',
-          },
+          },         
         ],
       },
       footer: {
