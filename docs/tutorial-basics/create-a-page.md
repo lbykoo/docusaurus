@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+date: 2024-10-17
 ---
 
 # Create a Page

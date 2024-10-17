@@ -134,6 +134,16 @@ const config = {
       },
     ],
     [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'authors',
+        routeBasePath: 'authors', 
+        path: 'authors', 
+        blogTitle: 'authors', 
+        blogDescription: `Our creator and author dedicated to empowering women, especially those facing health challenges like gynecological diseases. With a focus on promoting a healthier and happier life, Ladysvoa provides valuable insights, advice, and support through various platforms. Our work emphasizes women's health and well-being, helping those who have undergone life-changing medical procedures find strength and guidance. `, 
+      },
+    ],
+    [
       '@docusaurus/plugin-content-docs',
       {
         id: 'info', 
